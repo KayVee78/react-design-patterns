@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import { SplitScreen } from "./SplitScreen";
 
+// left prop of SplitScreen
+const LeftHandComponent = () => {
+  return <h1 style={{ backgroundColor: "green" }}>Left!</h1>;
+};
+
+// right prop of SplitScreen
+const RightHandComponent = () => {
+  return <h1 style={{ backgroundColor: "blue" }}>Right!</h1>;
+};
+
+// App is the main functional component which is used to render other components
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <SplitScreen left={LeftHandComponent} right={RightHandComponent} />;
 }
 
 export default App;
