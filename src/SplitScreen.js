@@ -7,18 +7,31 @@ const Container = styled.div`
 
 // Pane is the variable name given to the div which Left and Right Components are being wrapped
 const Pane = styled.div`
-  flex: 1;
+  flex: ${(props) => props.weight};
 `;
 
 // SplitScreen is the functional component to split the screen
-export const SplitScreen = ({ left: Left, right: Right }) => {
+export const SplitScreen = ({
+  // left: Left,
+  // right: Right,
+  children, //passing children prop
+  leftWeight = 1, //default value is flex 1
+  rightWeight = 1,
+}) => {
+  const [left, right] = children;
   return (
     <Container>
-      <Pane>
-        <Left />
+      <Pane weight={leftWeight}>
+        {/* <Left /> */}
+
+        {/* using children prop */}
+        {left}
       </Pane>
-      <Pane>
-        <Right />
+      <Pane weight={rightWeight}>
+        {/* <Right /> */}
+
+        {/* using children prop */}
+        {right}
       </Pane>
     </Container>
   );
