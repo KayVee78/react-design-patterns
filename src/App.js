@@ -1,10 +1,6 @@
-import logo from "./logo.svg";
 import "./App.css";
-import { RegularListComponent } from "./RegularListComponent";
-import { SmallPersonListItem } from "./people/SmallPersonListItem";
-import { LargePersonListItem } from "./people/LargePersonListItem";
-import { NumberedListComponent } from "./NumberedListComponent";
-import { LargeProductListItem } from "./product/LargeProductListItem";
+import { Modal } from "./ModalComponent";
+import { LargeProductDetails } from "./product/LargeProductDetails";
 
 const people = [
   {
@@ -50,29 +46,10 @@ const products = [
 
 function App() {
   return (
-    //Regular way of using SmallPersonListItem and LargePersonListItem is not like this.
-    //But using them via RegularListComponent has made it more reusable
     <>
-      <RegularListComponent
-        items={people}
-        resourceName={"person"}
-        itemComponent={SmallPersonListItem}
-      />
-      <NumberedListComponent
-        items={people}
-        resourceName={"person"}
-        itemComponent={LargePersonListItem}
-      />
-      <RegularListComponent
-        items={products}
-        resourceName={"product"}
-        itemComponent={LargeProductListItem}
-      />
-      <NumberedListComponent
-        items={products}
-        resourceName={"product"}
-        itemComponent={LargeProductListItem}
-      />
+      <Modal>
+        <LargeProductDetails product={products[0]} />
+      </Modal>
     </>
   );
 }
