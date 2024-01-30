@@ -3,6 +3,8 @@ import "./App.css";
 import { RegularListComponent } from "./RegularListComponent";
 import { SmallPersonListItem } from "./people/SmallPersonListItem";
 import { LargePersonListItem } from "./people/LargePersonListItem";
+import { NumberedListComponent } from "./NumberedListComponent";
+import { LargeProductListItem } from "./product/LargeProductListItem";
 
 const people = [
   {
@@ -56,10 +58,20 @@ function App() {
         resourceName={"person"}
         itemComponent={SmallPersonListItem}
       />
-      <RegularListComponent
+      <NumberedListComponent
         items={people}
         resourceName={"person"}
         itemComponent={LargePersonListItem}
+      />
+      <RegularListComponent
+        items={products}
+        resourceName={"product"}
+        itemComponent={LargeProductListItem}
+      />
+      <NumberedListComponent
+        items={products}
+        resourceName={"product"}
+        itemComponent={LargeProductListItem}
       />
     </>
   );
