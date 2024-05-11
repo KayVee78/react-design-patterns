@@ -26,7 +26,8 @@ export const Modal = ({ children }) => {
       <button onClick={() => setShouldShow(true)}>Show Modal</button>
       {shouldShow && (
         <ModalBackground onClick={() => setShouldShow(false)}>
-          <ModalBody onClick={(e) => e.stopPropagation()}>
+          {/*This will prevent the click event from bubbling (affecting) up to the parent element */}
+          <ModalBody onClick={(e) => e.stopPropagation()}> 
             <button onClick={() => setShouldShow(false)}>Hide Button </button>
             {children}
           </ModalBody>
