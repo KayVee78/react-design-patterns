@@ -45,7 +45,14 @@ This project is to explore React.js Design Patterns with help of Shaun Wassell's
   <dt>Container Components - Components that take care of loading and managing data for their child components</dt>
   <dd>i) current-user-loader-component -> Loading current user (CurrentUserLoader)/ Loading users by id (UserLoader)/ Generic component to load any type of resource from the server (ResourceLoader)/ Load data by creating a async function and load data from local storage (DataSource)</dd>
   <dt>Uncontrolled Components - Components that keep track of their own states and release data only when some event occurs (submit event for HTML forms)</dt>
-  <dt>Controlled Components - Components that do not keep track of their own state-all state is passed in as props (when we use useState hook with text inputs)</dt>
+  <dd>i) uncontrolled-components</dd>
+  <dt>Controlled Components - Components that do not keep track of their own state-all state is passed in as props from a parent component (when we use useState hook with text inputs) - tend to be more reusable and easier to test</dt>
+   <dd>i) controlled-components</dd>
+   <dt>Controlled and Uncontrolled Content (More)</dt>
+   <dd>i) controlled-uncontrolled-modals</dd>
+   <dd>ii) controlled-uncontrolled-onboarding-flows</dd>
+   <dt>Higher-Order Components - A component that returns another component instead of JSX</dt>
+   <dd>i) higher-order-components</dd>
  
 </dl>
 
