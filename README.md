@@ -39,7 +39,7 @@ This project is to explore React.js Design Patterns with help of Shaun Wassell's
 <dl>
   <dt>Layout Components - React components that deal primarily with arranging other components on the page</dt>
   <dd>- split-screen-component</dd>
-  ![split screen](https://github.com/KayVee78/react-design-patterns/assets/90994452/0aff369b-180d-454e-ace4-46d759b040cc)
+![split screen](https://github.com/KayVee78/react-design-patterns/assets/90994452/aaf3c2bc-c04a-4c62-ae95-e5f75127ac27)
 
   <dd>- list-item-component</dd>
   <dd>- modal-components</dd>
