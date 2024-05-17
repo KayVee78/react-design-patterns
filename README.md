@@ -38,21 +38,26 @@ This project is to explore React.js Design Patterns with help of Shaun Wassell's
 
 <dl>
   <dt>Layout Components - React components that deal primarily with arranging other components on the page</dt>
-  <dd>i) split-screen-component</dd>
-  
-  <dd>ii) list-item-component</dd>
-  <dd>iii) modal-components</dd>
+  <dd>- split-screen-component</dd>
+  ![split screen](https://github.com/KayVee78/react-design-patterns/assets/90994452/0aff369b-180d-454e-ace4-46d759b040cc)
+
+  <dd>- list-item-component</dd>
+  <dd>- modal-components</dd>
   <dt>Container Components - Components that take care of loading and managing data for their child components</dt>
-  <dd>i) current-user-loader-component -> Loading current user (CurrentUserLoader)/ Loading users by id (UserLoader)/ Generic component to load any type of resource from the server (ResourceLoader)/ Load data by creating a async function and load data from local storage (DataSource)</dd>
+  <dd>- current-user-loader-component -> Loading current user (CurrentUserLoader)/ Loading users by id (UserLoader)/ Generic component to load any type of resource from the server (ResourceLoader)/ Load data by creating a async function and load data from local storage (DataSource)</dd>
   <dt>Uncontrolled Components - Components that keep track of their own states and release data only when some event occurs (submit event for HTML forms)</dt>
-  <dd>i) uncontrolled-components</dd>
+  <dd>- uncontrolled-components</dd>
   <dt>Controlled Components - Components that do not keep track of their own state-all state is passed in as props from a parent component (when we use useState hook with text inputs) - tend to be more reusable and easier to test</dt>
-   <dd>i) controlled-components</dd>
+   <dd>- controlled-components</dd>
    <dt>Controlled and Uncontrolled Content (More)</dt>
-   <dd>i) controlled-uncontrolled-modals</dd>
-   <dd>ii) controlled-uncontrolled-onboarding-flows</dd>
+   <dd>- controlled-uncontrolled-modals</dd>
+   <dd>- controlled-uncontrolled-onboarding-flows</dd>
    <dt>Higher-Order Components - A component that returns another component instead of JSX</dt>
-   <dd>i) higher-order-components</dd>
+   <dd>- higher-order-components</dd>
+   <dt>Custom-Hooks - Special hooks that we define ourselves, and that usually combine the functionality of one or more existing React hooks like “useState” or “useEffect”</dt>
+   <dd>- custom-hooks</dd>
+   <dt>Functional Components (Recursive components, Partially applied components, Component composition)</dt>
+   <dd>- functional-components</dd>
  
 </dl>
 
@@ -81,23 +86,12 @@ This project is to explore React.js Design Patterns with help of Shaun Wassell's
 * npm
   ```sh
   npm install npm@latest -g
-  
-* Bootstrap
-  ```sh
-  npm install bootstrap@4.0.0
-  ```
-
-* OMDB API 
-  ```sh
-  Generate an API key to use the Movie API via below link
-  https://www.omdbapi.com/
-  ```
 
 ### Installation
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/KayVee78/movie-app.git
+   git clone https://github.com/KayVee78/react-design-patterns.git
    ```
 2. Install NPM packages
    ```sh
@@ -107,6 +101,10 @@ This project is to explore React.js Design Patterns with help of Shaun Wassell's
 3. To run the project
    ```sh
    npm run start
+   
+3. To run server
+   ```sh
+   node server.js
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -117,10 +115,6 @@ This project is to explore React.js Design Patterns with help of Shaun Wassell's
 [linkedin-url]: https://www.linkedin.com/in/kithmi-hetti-709966219/
 [Node.js]: https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white
 [Node-url]: https://nodejs.org/en/learn/getting-started/introduction-to-nodejs
-[MySQL]: https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white
-[Mysql-url]: https://www.mysql.com/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://react.dev/
-[Bootstrap]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com/docs/5.3/getting-started/webpack/
 
